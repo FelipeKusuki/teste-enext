@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* importando fontes que serao usadas */
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+
+
+div#interface{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: 1px solid #606060;
+	border-spacing: 50px;*/
+}
+
+/*Formatacao das caixas de texto*/
+input{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 13pt;
+}
+
+/* barra de procura do cabecalho */
+div#procura{
+	display: block;
+	position: absolute;
+	margin-left: 450px;
+	margin-top: -70px;
+}
+
+
+/* Formatacao do menu*/
+nav#Menu{
+	display: block;
+}
+
+nav#Menu a{
+	font-family: 'Droid Sans', sans-serif;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* edicao bloco roxo*/
+nav#Menu ul{
+	list-style: none;
+	background-color: #663366;
+	top: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 95%
+}
+
+/*edicao individual de cada item*/
+nav#Menu li{
+	display: inline-block;
+	font-family: 'Droid Sans', sans-serif;
+	color:#ffffff;
+	padding:10px;
+	margin:10px;
+}
+
+
+
+/*edicao do nome da empresa localizado no cabecalho*/
+header#cabecalho h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30pt;
+	color: #FF6600;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+
+header#cabecalho h3{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 15pt;
+	color: #663366;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+
+/*formatacao da tabela*/
+table#potions {
+	font-family: 'Droid Sans', sans-serif;
+	/*border: 1px solid #606060;
+	border-spacing: 50px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* preco das pocoes em vermelho */
+span.colorir{
+	font-family: 'Droid Sans', sans-serif;
+	color: #FF0000;	
+}
+
+/* LightBox*/
+
+div#fade.overlay {
+	display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+}
+
+div#light.conteudo {
+	display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+            padding: 16px;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+}
+
+/*Parte inferior*/
+
+section#esquerda a{
+	font-family: 'Droid Sans', sans-serif;
+	color:#FF6600;
+	text-decoration: none;
+}
+
+section#esquerda {
+	background-color: #CDC9C9;
+	display: block;
+	width: 49%;
+	float: left;
+	font-family: Droid Sans,Oswald;
+	margin-left: 59px;
+	margin-top: 100px;
+}
+
+section#esquerda ul{
+	list-style: none;
+	background-color: #CDC9C9;
+}
+
+/*edicao individual de cada item*/
+section#esquerda li{
+	display: inline-block;
+	background-color: #CDC9C9;
+	font-size: 18pt;
+	padding:10px;
+	margin:10px;
+
+}
+
+aside#direita{
+	background-color: #CDC9C9;
+	display: block;
+	width: 41%;
+	height: 29%;
+	float: right;
+	margin-right: 60px;
+	margin-top: 100px;
+
+
+}
+
+aside#direita ul{
+	list-style: none;
+	background-color: #ffffff;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+/*edicao individual de cada item*/
+aside#direita li{
+	display: inline-block;
+	font-family: Droid Sans,Oswald;
+	color:#000000;
+	/*padding:10px;*/
+	margin:10px;
+}

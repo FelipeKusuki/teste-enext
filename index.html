@@ -1,0 +1,147 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title> Merlin's Potions</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+</head>
+
+<script type="text/javascript" src="javascript/funcoes.js"></script>
+
+<body>
+<div id="interface">	
+
+	<!-- cabecalho do site -->
+	<header id="cabecalho">
+		<hgroup>
+			<h1><b>MERLIN'S</b> POTIONS</h1>
+			<h3><i>&nbsp &nbsp &nbsp fine potions since 1026</i> </h3>
+		</hgroup>
+
+		<div id="procura">
+
+		<!--caixa de busca cabecalho-->
+			<input type="text" name="search" id="idSearch" placeholder="Search our stock" />
+		</div>	
+
+			<!--bag quantidade cabecalho
+			<input type="number" name="qtd" id="idQtd" min="0" value="0" />-->
+
+		
+
+
+
+		<nav id="Menu">
+		<ul type="disc">
+		 <li><a href="potions.html"> Potions </a></li>
+		 <li><a href ="ingredients.html"> Ingredients </a></li>
+		 <li><a href="books.html">  Books </a></li>
+		 <li><a href="supplies.html"> Supplies</a></li>
+		 <li><a href="charms.html"> Charms</a></li>
+		 <li><a href="clearance.html"> Clearance!</a></li>
+		 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		 <li><a href="signIn.html"> Sign In</a></li>
+		 <li><a href="singUp.html"> Sign UP</a></li>
+		</ul> 
+		</nav>
+
+	</header>
+
+	<!-- Tabela que contem as fotos das pocoes -->
+	<table id="potions">
+	<caption> Potions</caption>	
+
+		<figure class="fotoLegenda">
+			<tr>
+				<td>
+
+					  <!-- Ligacao com o javaScript. NAO CONSEGUI LER O ARQUIVO JSON UTILIZANDO javaScrip. SO ABRE A JANELA PARA O PRIMEIRO POTION (AGING POTION) -->
+
+					  <img id="1" src="products/aging-potion.png" width="200" onclick="abrir();" />
+
+						<!-- LIGHTBOX -->
+					<div id="light" class="conteudo"
+						 onclick="fechar();" >Fechar
+					</div>
+					<div id="fade" class overlay>
+					</div>
+
+
+					<figcaption>
+						Aging Potion -<span class="colorir">$29.99</span>
+					</figcaption>
+				</td>
+
+				<td><img src="products/bulgeye-potion.png" width="200" />
+					<figcaption>
+						Bulgeye Potion - <span class="colorir">$19.99</span>
+					</figcaption>
+				</td>
+
+				<td><img src="products/dragon-tonic.png" width="200" />
+					<figcaption>
+						Dragon Tonic - <span class="colorir">$64.99</span>
+					</figcaption>
+				</td>
+			</tr>
+			<tr>
+			<td>
+					<img src="products/love-potion.png" width="200" />
+					<figcaption>
+						Love Potion -<span class="colorir"> $29.99</span>
+					</figcaption>
+				</td>
+
+				<td><img src="products/polyjuice-potion.png" width="200" />
+					<figcaption>
+						Polyjuice Potion - <span class="colorir">$99.99</span>
+					</figcaption>
+				</td>
+
+				<td><img src="products/sleeping-draught.png" width="200" />
+					<figcaption>
+						Sleeping Draught - <span class="colorir">$14.99</span>
+					</figcaption>
+				</td>
+			</tr>
+		</figure>
+
+	</table>
+
+	<!-- parte logo abaixo das pocoes -->
+
+	<div id="parteInferior">
+
+		<!-- parte esquerda da parte inferior-->
+
+		<section id="esquerda">
+			<ul id=listaInferior>
+				<li><a href="companyReturns.html"> company <br/> returns</a></li>
+				<li><a href="contact.html"> contact us <br/> careers</a></li>
+				<li><a href="shipping.html"> shipping</a></li>
+			</ul>	
+			<br/>
+			 &nbsp &nbsp &nbsp 2017 Merlin's Potions. All Rights Reserved
+			<br/><br/>
+
+		</section>
+
+		<!-- Parte direita da parte inferior -->
+
+		<aside id="direita">
+		<ul id=listaInferior>
+			<li>Sing Up our Newsletter<br/></li>
+			<li>Sign up for our newsletter &amp get exclusive discounsts!</li>
+			<!--caixa de busca cabecalho-->
+			<li>
+				
+				<input type="text" name="enterEmail" id="idEnterEmail" placeholder="Enter your email" /> 
+			
+				<input type="submit" value="submit">
+
+			</li>
+		</ul>
+		</aside>
+	</div>
+</div>
+</body>
+</html>
